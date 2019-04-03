@@ -3,3 +3,8 @@ var playlist = {'Slowdive': 'Alison', 'My Bloody Valentine': 'Sometimes', 'Phil 
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist.songTitle = 'artistName'
 }
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.artistName;
+  return playlist
+}
